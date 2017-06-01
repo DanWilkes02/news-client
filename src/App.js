@@ -1,6 +1,22 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.min.css';
 import axios from 'axios';
+
+
+class NavBar extends Component{
+  render(){
+    return(
+      <div className="NavBar">
+        <h3>NewsClient</h3>
+
+      </div>
+    );
+  }
+}
+
+class NewsWidget extends Component{}
+
+class footer extends Component{}
 
 class App extends Component {
 
@@ -24,8 +40,9 @@ class App extends Component {
   render() {
 
     return (
-      <div className="App">
-        <h1>{this.state.headline}</h1>
+      <div id="App">
+        <NavBar/>
+        <h1>check</h1>
       </div>
     );
   }
