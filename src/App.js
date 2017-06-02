@@ -6,10 +6,11 @@ import axios from 'axios';
 class NavBar extends Component{
   render(){
     return(
-      <div className="NavBar">
-        <h3>NewsClient</h3>
 
-      </div>
+        <div className="NavBar">
+          <h1>NewsClient</h1>
+        </div>
+
     );
   }
 }
@@ -42,7 +43,7 @@ class App extends Component {
     return (
       <div id="App">
         <NavBar/>
-        <h1>check</h1>
+      
       </div>
     );
   }
