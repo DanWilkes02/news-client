@@ -26,7 +26,7 @@ class NewsWidget extends Component {
 
   componentDidMount() {
     console.log('didMount');
-    
+
 
     axios.get('https://newsapi.org/v1/articles?source=techcrunch&apiKey=2f0e768750294d9a886f63de3db38fd0').then((res) => {
       let headline = res.data.articles[Number(this.props.widgetId)].title;
